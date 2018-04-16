@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans';
+  animation: change-background 4s linear infinite;
+}
+@keyframes change-background {
+  0% {
+    background: #69b7eb;
+  }
+  50% {
+    background: #93c3e4;
+  }
+  100% {
+    background: #69b7eb;
+  }
+}
