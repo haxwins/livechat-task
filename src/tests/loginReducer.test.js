@@ -1,4 +1,4 @@
-import reducer from './loginReducer';
+import reducer from '../loginReducer';
 
 describe('Login reducer', ()=>{
 

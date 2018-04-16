@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import loginReducer from './loginReducer';
-import Login from './Login.js';
+import loginReducer from '../loginReducer';
+import Login from '../Login.js';
 
 const store = createStore(
   loginReducer,
