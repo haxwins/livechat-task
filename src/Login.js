@@ -8,8 +8,8 @@ const passwordTest = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\D]{6,}$/;
 
 class Login extends Component {
   state = {
-    emailValue: 'test@test.pl',
-    passwordValue: 'Password1',
+    emailValue: '',
+    passwordValue: '',
     isPasswordValid: true,
     isEmailValid: true,
   }
@@ -17,7 +17,6 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     //wrong input values
-    
   }
   
   onChangeEmail = (e) =>{
@@ -85,31 +84,32 @@ const mapDispatchToProps = (dispatch) => {
 
 export default connect(mapStateToProps,mapDispatchToProps)(Login)
 
-const Loader = () => (
+export const Loader = () => (
   <LoaderContainer>
     <LoaderAnimation></LoaderAnimation>
   </LoaderContainer>
 )
-const Remember = ({ label }) => (
+
+export const Remember = ({ label }) => (
   <RememberBoxContainer>
     <RememberLabel>{label}</RememberLabel>
     <RememberCheckBox type="checkbox" />
   </RememberBoxContainer>
 )
 
-const ErrorMessage = ({ message }) => (
+export const ErrorMessage = ({ message }) => (
   <div>
     <InvalidCredential>{message}</InvalidCredential>
   </div>
 )
 
-const AuthorizationError = ({ message }) => (
+export const AuthorizationError = ({ message }) => (
   <div>
     <AuthorizationMessage>{message}</AuthorizationMessage>
   </div>
 )
 
-const rotate360 = keyframes`
+export const rotate360 = keyframes`
   from{
     transform: rotate(0deg);
   }
@@ -117,7 +117,7 @@ const rotate360 = keyframes`
     transform: rotate(360deg);
   }
 `
-const LoaderAnimation = styled.div`
+export const LoaderAnimation = styled.div`
   border: 16px solid #f3f3f3;
   border-top: 16px solid #3498db;
   border-radius: 50%;
@@ -125,7 +125,7 @@ const LoaderAnimation = styled.div`
   height: 80px;
   animation: ${rotate360} 2s linear infinite;
 `
-const LoaderContainer = styled.div`
+export const LoaderContainer = styled.div`
   color: white;
   height: 100vh;
   width: 100vw;
@@ -136,7 +136,7 @@ const LoaderContainer = styled.div`
   position: absolute;
   z-index: 5;
 `
-const Input = styled.input`
+export const Input = styled.input`
   width: 14rem;
   margin: 0.5rem 0 1rem 0;
   padding: 0.5rem;
@@ -146,13 +146,13 @@ const Input = styled.input`
   border-color: ${props => props.notValid ? ' 	rgb(255, 0, 51, 0.8)' : 'rgba(0, 0, 0, 0)'};
   border-radius: 6px;
 `
-const InvalidCredential = styled.p`
+export const InvalidCredential = styled.p`
   margin:-1rem 0 0 0.5rem;
   font-size: 0.8rem;
   color: rgb(255, 0, 51, 0.8); 
   position: absolute;
 `
-const Container = styled.div`
+export const Container = styled.div`
   font-size: 1.2rem;
   padding-top: 160px;
   display: flex;
@@ -160,12 +160,12 @@ const Container = styled.div`
   align-items: center;
   color:rgb(217, 240, 255);
 `
-const LoginContainer = styled.div`
+export const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0.5rem 0 0.5rem;
 `
-const Button = styled.div`
+export const Button = styled.div`
   text-align: center;
   width: 60%;
   color: #69b7eb;
@@ -182,22 +182,22 @@ const Button = styled.div`
     transform: scale(1.2, 1.2);
   }
 `
-const RememberLabel = styled.p`
+export const RememberLabel = styled.p`
   font-size: 16px;
   margin-left: 1.5rem;
   display: inline;
 `
-const RememberCheckBox = styled.input`
+export const RememberCheckBox = styled.input`
   margin-left: 1rem;
 `
-const RememberBoxContainer = styled.div`
+export const RememberBoxContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   padding-right: 0.5rem;
   align-items: center;
 `
-const SuccesfullMessage = styled.div`
+export const SuccesfullMessage = styled.div`
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -207,7 +207,7 @@ const SuccesfullMessage = styled.div`
   margin:auto;
   padding-top: 10rem;
 `
-const AuthorizationMessage = styled.div`
+export const AuthorizationMessage = styled.div`
   margin-top: 1rem;
   font-size: 1rem; 
   color: white;

@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorizationError 1`] = `
+.c0 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+<div>
+  <div
+    className="c0"
+  />
+</div>
+`;
+
+exports[`AuthorizationMessage 1`] = `
+.c0 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Button 1`] = `
+.c0 {
+  text-align: center;
+  width: 60%;
+  color: #69b7eb;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.2,1.2);
+  -ms-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Button 2`] = `
+.c0 {
+  text-align: center;
+  width: 60%;
+  color: #69b7eb;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.2,1.2);
+  -ms-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Container 1`] = `
+.c0 {
+  font-size: 1.2rem;
+  padding-top: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgb(217,240,255);
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`ErrorMessage 1`] = `
+.c0 {
+  margin: -1rem 0 0 0.5rem;
+  font-size: 0.8rem;
+  color: rgb(255,0,51,0.8);
+  position: absolute;
+}
+
+<div>
+  <p
+    className="c0"
+  />
+</div>
+`;
+
+exports[`Input 1`] = `
+.c0 {
+  width: 14rem;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem;
+  color: #69b7eb;
+  background: white;
+  border: 2px solid;
+  border-color: rgba(0,0,0,0);
+  border-radius: 6px;
+}
+
+<input
+  className="c0"
+/>
+`;
+
+exports[`InvalidCredential 1`] = `
+.c0 {
+  margin: -1rem 0 0 0.5rem;
+  font-size: 0.8rem;
+  color: rgb(255,0,51,0.8);
+  position: absolute;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`LoaderAnimation 1`] = `
+.c0 {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: iVXCSc 2s linear infinite;
+  animation: iVXCSc 2s linear infinite;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`LoaderContainer 1`] = `
+.c0 {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`LoginContainer 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Remember 1`] = `
+.c1 {
+  font-size: 16px;
+  margin-left: 1.5rem;
+  display: inline;
+}
+
+.c2 {
+  margin-left: 1rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 0.5rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1"
+  />
+  <input
+    className="c2"
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`RememberBoxContainer 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 0.5rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`RememberCheckBox 1`] = `
+.c0 {
+  margin-left: 1rem;
+}
+
+<input
+  className="c0"
+/>
+`;
+
+exports[`RememberLabel 1`] = `
+.c0 {
+  font-size: 16px;
+  margin-left: 1.5rem;
+  display: inline;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`SuccesfullMessage 1`] = `
+.c0 {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: white;
+  width: 400px;
+  margin: auto;
+  padding-top: 10rem;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`rotate360 1`] = `<iVXCSc />`;
+
+exports[`testing whole component with custom state 1`] = `
+<Login
+  errorMessage=""
+  isLoading={false}
+  isLoginValid={false}
+  loginAction={[Function]}
+  loginMessage=""
+  logoutAction={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "notify": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": null,
+    }
+  }
+/>
+`;
