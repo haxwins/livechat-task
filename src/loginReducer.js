@@ -32,12 +32,12 @@ export default function reducer (state = initialState, action) {
         }
         case 'LOGOUT':{
             return {
-                ...state,
+                ...initialState,
                 isLoginValid: false,
             }
         }
-        default:
-            return state;
-        
+        default:{
+            return state
+        }
     }
 }

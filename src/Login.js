@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import styled, { keyframes } from 'styled-components';
 import { login, logout } from './loginActions';
 
-const emailTest = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailTest = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const passwordTest = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\D]{6,}$/;
 
 class Login extends Component {
@@ -56,9 +56,9 @@ class Login extends Component {
         {this.props.isLoading && <Loader />}
       <Container>
         <LoginContainer>
-          <Input placeholder="email" value={this.state.emailValue} onChange={this.onChangeEmail} />
+          <Input notValid={!this.state.isEmailValid} placeholder="email" value={this.state.emailValue} onChange={this.onChangeEmail} />
           {!this.state.isEmailValid && <ErrorMessage message="Your email is invalid" />}
-          <Input placeholder="password" value={this.state.passwordValue} type="password" onChange={this.onChangePassword} />
+          <Input notValid={!this.state.isPasswordValid} placeholder="password" value={this.state.passwordValue} type="password" onChange={this.onChangePassword} />
           {!this.state.isPasswordValid && <ErrorMessage message="Your password is invalid" />}
           <Remember label="remember me" />
           <Button onClick={this.handleSubmit}>Login</Button>
@@ -142,13 +142,14 @@ const Input = styled.input`
   padding: 0.5rem;
   color: #69b7eb;
   background: white;
-  border: 3px solid; 
+  border: 2px solid; 
+  border-color: ${props => props.notValid ? ' 	rgb(255, 0, 51, 0.8)' : 'rgba(0, 0, 0, 0)'};
   border-radius: 6px;
 `
 const InvalidCredential = styled.p`
-  margin:-0.8rem 0 0 0.5rem;
-  font-size: 0.7rem;
-  color: red;
+  margin:-1rem 0 0 0.5rem;
+  font-size: 0.8rem;
+  color: rgb(255, 0, 51, 0.8); 
   position: absolute;
 `
 const Container = styled.div`
@@ -167,7 +168,7 @@ const LoginContainer = styled.div`
 const Button = styled.div`
   text-align: center;
   width: 60%;
-  color: rgb(195, 228, 255);
+  color: #69b7eb;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
   cursor: pointer;
@@ -205,10 +206,6 @@ const SuccesfullMessage = styled.div`
   width: 400px;
   margin:auto;
   padding-top: 10rem;
-`
-const ButtonContainer = styled.div`
-  text-align: center;
-  padding-right: 10px;
 `
 const AuthorizationMessage = styled.div`
   margin-top: 1rem;
