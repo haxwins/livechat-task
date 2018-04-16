@@ -43,6 +43,7 @@ test('testing whole component with custom state', ()=>{
   const result = renderer.getRenderOutput();
   expect(result).toMatchSnapshot();
 }) 
+
 const components = [
     {   name: 'Button', component: Button},
     {   name: 'Remember', component: Remember},
