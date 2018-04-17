@@ -51,9 +51,9 @@ class Login extends Component {
       <Container>
         <LoginContainer>
           <Input notValid={!this.state.isEmailValid} placeholder="email" value={this.state.emailValue} onChange={this.onChangeEmail} />
-          {!this.state.isEmailValid && <ErrorMessage message="Your email is invalid" />}
+          {!this.state.isEmailValid && <ErrorMessage message="invalid email" />}
           <Input notValid={!this.state.isPasswordValid} placeholder="password" value={this.state.passwordValue} type="password" onChange={this.onChangePassword} />
-          {!this.state.isPasswordValid && <ErrorMessage message="Your password is invalid" />}
+          {!this.state.isPasswordValid && <ErrorMessage message="invalid password" />}
           <Remember label="remember me" />
           <Button onClick={this.handleSubmit}>Login</Button>
           {this.props.errorMessage && <AuthorizationError message={this.props.errorMessage} />}
