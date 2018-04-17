@@ -6,3 +6,7 @@ npm install
 ```
 npm start 
 ```
+tests
+```
+npm test
+```
