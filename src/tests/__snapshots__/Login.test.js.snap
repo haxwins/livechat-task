@@ -337,6 +337,68 @@ exports[`SuccesfullMessage 1`] = `
 />
 `;
 
+exports[`rendering component when login is succesfull 1`] = `
+.c1 {
+  text-align: center;
+  width: 60%;
+  color: #69b7eb;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c1:hover {
+  -webkit-transform: scale(1.2,1.2);
+  -ms-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
+}
+
+.c0 {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: white;
+  width: 400px;
+  margin: auto;
+  padding-top: 10rem;
+}
+
+<div
+  className="c0"
+>
+  <p>
+    login succesfull
+  </p>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    Logout
+  </div>
+</div>
+`;
+
 exports[`rotate360 1`] = `<iVXCSc />`;
 
 exports[`testing whole component with custom state 1`] = `

@@ -71,3 +71,16 @@ components.forEach((element) => {
         expect(tree).toMatchSnapshot()
     })
 })
+
+test('rendering component when login is succesfull', ()=>{
+    const initialState = {
+      isLoginValid: true,
+      loginMessage: '',
+      isLoading: false,
+      errorMessage: '',
+      }
+    const store = mockStore(initialState);
+  
+    const tree = renderer.create(<Login store={store}/>).toJSON()
+    expect(tree).toMatchSnapshot();
+  }) 
