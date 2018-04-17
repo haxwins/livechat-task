@@ -35,12 +35,17 @@ class Login extends Component {
     })
   } 
 
+  handleLogout = () => {
+    this.setState({emailValue: '', passwordValue: ''});
+    this.props.logoutAction();
+  }
+
   render() {
     if (this.props.isLoginValid) {
       return (
         <SuccesfullMessage>
           <p>login succesfull</p>
-          <Button onClick={this.props.logoutAction}>Logout</Button>
+          <Button onClick={this.handleLogout}>Logout</Button>
         </SuccesfullMessage>
       )
     }
