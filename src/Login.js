@@ -14,11 +14,6 @@ class Login extends Component {
     isEmailValid: true,
   }
  
-  handleSubmit = (e) => {
-    e.preventDefault();
-    //wrong input values
-  }
-  
   onChangeEmail = (e) =>{
     this.setState({emailValue: e.target.value});
   }
@@ -44,7 +39,7 @@ class Login extends Component {
     if (this.props.isLoginValid) {
       return (
         <SuccesfullMessage>
-          <p>login succesfull</p>{/*this.props.loginMessage*/}
+          <p>login succesfull</p>
           <Button onClick={this.props.logoutAction}>Logout</Button>
         </SuccesfullMessage>
       )

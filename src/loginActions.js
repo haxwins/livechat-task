@@ -1,7 +1,7 @@
 export function login (email, password){
     return dispatch => {
         dispatch({type: 'LOGIN_PENDING'})
-        // MOCK API REPONSE 
+        //MOCK API REPONSE 
         setTimeout(() => {
             if (email === 'test@test.pl' && password === 'Password1') {
                 dispatch({

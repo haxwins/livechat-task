@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import styled from 'styled-components'
 import 'jest-styled-components'
 import ShallowRenderer from 'react-test-renderer/shallow';
