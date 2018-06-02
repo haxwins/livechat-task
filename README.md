@@ -10,3 +10,6 @@ tests
 ```
 npm test
 ```
+
+Login: test@test.pl
+Password: Password1
